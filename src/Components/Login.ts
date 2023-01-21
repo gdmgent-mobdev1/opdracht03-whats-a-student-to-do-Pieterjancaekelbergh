@@ -8,17 +8,17 @@ class LoginComponent extends Component {
       model: {},
     });
   }
-}
 
-
-render() {
-  const loginContainer = document.createElement('div');
-  loginContainer.appendChild(
-    Elements.createHeader({
-      textContent: 'welkom to this page',
-    }),
-  );
-  return loginContainer;
+  // eslint-disable-next-line class-methods-use-this
+  render() {
+    const loginContainer = document.createElement('div');
+    loginContainer.appendChild(
+      Elements.createHeader({
+        textContent: 'Welcome to this page',
+      }),
+    );
+    return loginContainer;
+  }
 }
 
 export default LoginComponent;
